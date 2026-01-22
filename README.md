@@ -132,10 +132,12 @@ Verificação do IP
 ```bash
 ip a
 ```
+
 ### 4️⃣ Ativação do SSH
   * Instalação do serviço OpenSSH
   * Inicialização do serviço
   * Liberação de acesso remoto
+    
 ```bash
 sudo apt update
 sudo apt install openssh-server -y
@@ -185,7 +187,7 @@ ssh usuario@192.168.1.100
 
 Este projeto serve como base sólida para ambientes Linux em produção ou laboratório, reforçando conceitos fundamentais de redes, sistemas operacionais e acesso remoto seguro.
 
-##👤 Autor
+## 👤 Autor
 
 Ygor Silva
 📍 Estudante e profissional em redes, Linux e cibersegurança
