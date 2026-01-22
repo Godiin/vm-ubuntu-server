@@ -1,55 +1,56 @@
-# Projeto: Criação e Configuração de VM Linux (Ubuntu Server) #
+# Projeto: Criação e Configuração de VM Linux (Ubuntu Server)
 
-** 📌 Visão Geral **
+## 📌 Visão Geral
 Este projeto documenta a criação e configuração de uma máquina virtual Linux (Ubuntu Server) com foco em ambiente de estudos, laboratório e boas práticas de administração de sistemas.
 
-O objetivo é preparar uma VM funcional com:
+### O objetivo é preparar uma VM funcional com:
   * Usuários configurados
   * Endereço IP fixo
   * Acesso remoto via SSH
 
-** 🎯 Objetivos do Projeto **
+## 🎯 Objetivos do Projeto
   * Criar uma VM Linux do zero
   * Configurar usuários de forma segura
   * Definir IP fixo
   * Habilitar e testar acesso SSH
 
-** 🧩 Escopo **
+## 🧩 Escopo
 Inclui:
   * Instalação do Ubuntu Server
   * Configuração básica de rede
   * Criação e gerenciamento de usuários
   * Acesso remoto via SSH
 
-** Não inclui (por enquanto): **
+ Não inclui (por enquanto): 
   * Firewall avançado
   * Hardening de segurança
   * Monitoramento
   * Serviços (Web, Banco, etc.)
 
-** 🛠️ Tecnologias Utilizadas **
+## 🛠️ Tecnologias Utilizadas 
   * Sistema Operacional: Ubuntu Server
   * Virtualização: VirtualBox / VMware (ou outro)
   * Acesso remoto: OpenSSH
   * Ambiente: Linux
 
-** 🏗️ Arquitetura do Ambiente **
+## 🏗️ Arquitetura do Ambiente 
   * Host físico executando o hypervisor
   * VM Ubuntu Server em modo Bridge ou NAT
   * Acesso remoto via SSH a partir da rede local
 
-** 🚀 Etapas do Projeto **
+## 🚀 Etapas do Projeto 
+
 1️⃣ Criação da Máquina Virtual
   * Criação de nova VM no hypervisor
 
-** Definição de: **
+ Definição de: 
     * CPU
     * Memória RAM
     * Disco
     * Anexação da ISO do Ubuntu Server
     * Instalação padrão do sistema
 
-** 2️⃣ Criação e Gerenciamento de Usuários **
+  2️⃣ Criação e Gerenciamento de Usuários
     * Criação de usuário principal
     * Definição de senha segura
     * Inclusão em grupos administrativos (sudo)
@@ -92,10 +93,10 @@ Configuração do gateway
 ```bash
 sudo route add default gw 192.168.1.1
 ```
-⚠️ Observação:
+#### ⚠️ Observação:
 Essa configuração é perdida após reiniciar a VM.
 
-🔹 Opção 2: Configuração Persistente (Netplan)
+### 🔹 Opção 2: Configuração Persistente (Netplan)
 Utilizada como configuração definitiva do sistema.
 
 Acessar o diretório do Netplan
