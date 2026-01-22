@@ -40,7 +40,7 @@ Inclui:
 
 ## 🚀 Etapas do Projeto 
 
-###1️⃣ Criação da Máquina Virtual
+### 1️⃣ Criação da Máquina Virtual
   * Criação de nova VM no hypervisor
 
 #### Definição de: 
@@ -132,12 +132,10 @@ Verificação do IP
 ```bash
 ip a
 ```
-
 ### 4️⃣ Ativação do SSH
   * Instalação do serviço OpenSSH
   * Inicialização do serviço
-  * Liberação de acesso remoto
-    
+  * Liberação de acesso remoto 
 ```bash
 sudo apt update
 sudo apt install openssh-server -y
