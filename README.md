@@ -40,32 +40,31 @@ Inclui:
 
 ## 🚀 Etapas do Projeto 
 
-1️⃣ Criação da Máquina Virtual
+###1️⃣ Criação da Máquina Virtual
   * Criação de nova VM no hypervisor
 
- Definição de: 
+#### Definição de: 
     * CPU
     * Memória RAM
     * Disco
     * Anexação da ISO do Ubuntu Server
     * Instalação padrão do sistema
 
-  2️⃣ Criação e Gerenciamento de Usuários
+ ### 2️⃣ Criação e Gerenciamento de Usuários
     * Criação de usuário principal
     * Definição de senha segura
     * Inclusão em grupos administrativos (sudo)
 
 Exemplo de comando:
-
 ```bash
 adduser usuario
 usermod -aG sudo usuario
 ````
 obs.: Deixei um usuário para com permissão sudo e outro sem.
 
-3️⃣ Configuração de IP Fixo
+### 3️⃣ Configuração de IP Fixo
 
-## 🌐 Configuração de IP (Modo Temporário)
+### 🌐 Configuração de IP (Modo Temporário)
 
 Neste projeto, o endereço IP foi configurado de forma **temporária**, utilizando o comando `ifconfig`, com fins de **teste e estudo**.
 
@@ -73,12 +72,12 @@ Neste projeto, o endereço IP foi configurado de forma **temporária**, utilizan
 ```bash
 ip a
 ```
-** 🌐 Configuração de Endereço IP **
+## 🌐 Configuração de Endereço IP 
 Neste projeto, a configuração de rede foi realizada de duas formas:
 1. Configuração temporária via `ifconfig` (para testes)
 2. Configuração persistente via Netplan (definitiva)
 
-Opção 1: Configuração Temporária (ifconfig)
+### Opção 1: Configuração Temporária (ifconfig)
 Utilizada para testes rápidos em laboratório.
 
 Identificação da interface de rede
@@ -133,7 +132,7 @@ Verificação do IP
 ```bash
 ip a
 ```
-4️⃣ Ativação do SSH
+### 4️⃣ Ativação do SSH
   * Instalação do serviço OpenSSH
   * Inicialização do serviço
   * Liberação de acesso remoto
@@ -148,45 +147,45 @@ Teste de acesso:
 ```bash
 ssh usuario@192.168.1.100
 ```
-🔄 Fluxo de Uso
+#### 🔄 Fluxo de Uso
   * Usuário inicia a VM
   * VM recebe IP fixo configurado
   * Administrador acessa via SSH
   * Gerenciamento é feito remotamente
 
-⚠️ Desafios Encontrados
+#### ⚠️ Desafios Encontrados
   * Identificação correta da interface de rede
   * Configuração inicial do Netplan
   * Garantir acesso remoto sem perder conectividade
 
-✅ Soluções Aplicadas
+#### ✅ Soluções Aplicadas
   * Uso de IP fixo para evitar perda de acesso
   * Testes locais antes de acesso remoto
   * Configuração mínima para evitar falhas
 
-📈 Resultados Obtidos
+#### 📈 Resultados Obtidos
   * VM Linux totalmente funcional
   * Acesso remoto estável
   * Ambiente pronto para estudos, labs e serviços
 
-📚 Aprendizados
+#### 📚 Aprendizados
   * Administração básica de Linux Server
   * Configuração de rede em ambiente virtualizado
   * Importância da documentação técnica
   * Fundamentos essenciais para NOC / SOC / SysAdmin
 
-🛣️ Próximos Passos
+#### 🛣️ Próximos Passos
   * Configurar firewall (UFW)
   * Criar chaves SSH
   * Desativar login root via SSH
   * Implementar monitoramento
   * Usar essa VM como base de um Home Lab
 
-📎 Conclusão
+## 📎 Conclusão
 
 Este projeto serve como base sólida para ambientes Linux em produção ou laboratório, reforçando conceitos fundamentais de redes, sistemas operacionais e acesso remoto seguro.
 
-👤 Autor
+##👤 Autor
 
 Ygor Silva
 📍 Estudante e profissional em redes, Linux e cibersegurança
